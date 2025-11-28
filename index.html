@@ -27,28 +27,34 @@
             border-radius: 9999px;
             transform: skewX(-15deg);
         }
+        /* Enhanced iOS-style frosted glass effect */
         .liquid-glass {
-            /* iOS-style frosted glass effect */
-            background: rgba(30, 41, 59, 0.2); 
-            backdrop-filter: blur(16px) saturate(180%);
-            -webkit-backdrop-filter: blur(16px) saturate(180%);
-            border: 1px solid rgba(74, 222, 128, 0.2);
+            background: rgba(30, 41, 59, 0.1); 
+            backdrop-filter: blur(20px) saturate(200%);
+            -webkit-backdrop-filter: blur(20px) saturate(200%);
+            border: 1px solid rgba(74, 222, 128, 0.25);
             border-radius: 12px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3); /* Softer, deeper shadow */
             position: relative;
             overflow: hidden;
+            transition: all 0.3s ease-in-out; /* Smooth transition */
+        }
+        /* Added subtle hover effect */
+        .liquid-glass:hover {
+            box-shadow: 0 12px 40px 0 rgba(74, 222, 128, 0.2);
+            border-color: rgba(74, 222, 128, 0.4);
+            transform: translateY(-2px);
         }
         .liquid-glass::before {
-            /* Subtle internal glow/flow effect */
             content: '';
             position: absolute;
             top: -50%;
             left: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle at center, rgba(74, 222, 128, 0.07) 0%, transparent 70%);
+            background: radial-gradient(circle at center, rgba(74, 222, 128, 0.1) 0%, transparent 70%);
             transform: rotate(45deg);
-            animation: flow 15s infinite linear;
+            animation: flow 18s infinite linear; /* Slower animation */
             pointer-events: none;
         }
 
@@ -61,7 +67,7 @@
 <body class="min-h-screen antialiased">
 
     <!-- Header uses the liquid glass effect -->
-    <header class="sticky top-0 z-10 liquid-glass rounded-none border-b border-gray-800">
+    <header class="sticky top-0 z-10 liquid-glass rounded-none border-b border-gray-800 backdrop-blur-2xl">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-xl font-bold text-green-400 hover:text-green-300 transition duration-300 tracking-wider">
                 &lt;voidvexel /&gt;
@@ -82,8 +88,8 @@
             </h2>
 
             <p class="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto mb-16">
-                I'm VoidVexel. I'm 14 years old, I live near Venice, and I play games like 
-                <span class="text-blue-400 font-bold">Minecraft</span>, **Peak**, and **The Walking Dead**.
+                I'm **Andrea** (VoidVexel online). I'm 14 years old, I live near Venice, and I play games like 
+                <span class="text-blue-400 font-bold">Minecraft</span>, <span class="text-indigo-400 font-bold">Peak</span>, and <span class="text-red-500 font-bold">The Walking Dead</span>.
             </p>
         </section>
         
@@ -96,24 +102,51 @@
             </h2>
             <div class="max-w-xl mx-auto">
                 <p class="text-gray-300 leading-relaxed text-lg mb-6">
-                    This page is simply a portfolio for introducing myself.
+                    This page is simply a hub for my online presence. I don't build projects. I just like having a cool profile.
                 </p>
                 <p class="text-gray-400 leading-relaxed text-md">
-                    I mostly spend time playing games.
+                    I like keeping things minimal, clean, and always in dark mode.
                 </p>
             </div>
         </section>
 
         <div class="section-separator"></div>
+
+        <!-- === MUSICIANS SECTION (with Liquid Glass) === -->
+        <section id="music" class="mb-16">
+            <h2 class="text-4xl sm:text-5xl font-bold text-center mb-10 text-gray-200">
+                <span class="text-green-400">//</span> Favorite Music
+            </h2>
+            <div class="max-w-md mx-auto liquid-glass p-6 sm:p-8">
+                <ul class="space-y-3 text-left text-lg text-gray-300">
+                    <li class="flex items-center space-x-3 transition duration-300 hover:text-green-300">
+                        <span class="text-green-400 font-mono">01.</span> <span>Tyler, the Creator</span>
+                    </li>
+                    <li class="flex items-center space-x-3 transition duration-300 hover:text-green-300">
+                        <span class="text-green-400 font-mono">02.</span> <span>Kanye West</span>
+                    </li>
+                    <li class="flex items-center space-x-3 transition duration-300 hover:text-green-300">
+                        <span class="text-green-400 font-mono">03.</span> <span>AZALI</span>
+                    </li>
+                    <li class="flex items-center space-x-3 transition duration-300 hover:text-green-300">
+                        <span class="text-green-400 font-mono">04.</span> <span>Toby Fox</span>
+                    </li>
+                    <li class="flex items-center space-x-3 transition duration-300 hover:text-green-300">
+                        <span class="text-green-400 font-mono">05.</span> <span>Frizk</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
         
     </main>
 
     <!-- Footer -->
     <footer class="mt-16 py-6 border-t border-gray-800">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center text-gray-600 text-sm">
-            <p>VoidVexel // Portfolio</p>
+            <p>VoidVexel // Digital Aesthetic Hub</p>
         </div>
     </footer>
 
 </body>
+</html>
 </html>
