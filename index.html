@@ -66,6 +66,7 @@
 </head>
 <body class="min-h-screen antialiased">
 
+    <!-- Header uses the liquid glass effect -->
     <header class="sticky top-0 z-10 liquid-glass rounded-none border-b border-gray-800 backdrop-blur-2xl">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-xl font-bold text-green-400 hover:text-green-300 transition duration-300 tracking-wider">
@@ -76,69 +77,130 @@
 
     <main class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
         
+        <!-- === HERO SECTION === -->
         <section id="hero" class="text-center mb-32 pt-16">
             <h1 class="text-6xl sm:text-8xl lg:text-[8rem] font-extrabold tracking-tighter mb-4 text-green-400 hero-text-glow leading-none">
                 Ralsei says - baaah-
             </h1>
             
             <h2 class="text-2xl sm:text-4xl font-light tracking-widest mb-10 text-gray-500 text-opacity-80 uppercase">
-                VoidVexel's Portfolio
+                VoidVexel's Digital Hub
             </h2>
 
             <p class="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto mb-16">
-                I'm Andrea (VoidVexel online). I'm 14 years old, my favorite anime is JJK. I live near Venice, and I play games like 
+                I'm <span class="text-green-400 font-bold">Andrea</span> (VoidVexel online). I'm 14 years old, I live near Venice, and I play games like 
                 <span class="text-blue-400 font-bold">Minecraft</span>, <span class="text-indigo-400 font-bold">Peak</span>, and <span class="text-red-500 font-bold">The Walking Dead</span>.
             </p>
         </section>
         
         <div class="section-separator"></div>
 
-        <section id="about" class="mb-32 text-center liquid-glass p-8 sm:p-12 max-w-3xl mx-auto">
+        <!-- === ABOUT/STATS SECTION === -->
+        <section id="about" class="mb-32">
             <h2 class="text-4xl sm:text-5xl font-bold text-center mb-10 text-gray-200">
-                <span class="text-green-400">//</span> About Me
+                <span class="text-green-400">//</span> Profile
             </h2>
-            <div class="max-w-xl mx-auto">
-                <p class="text-gray-300 leading-relaxed text-lg mb-6">
-                    This page is simply a hub for my online presence.
-                </p>
-                <p class="text-gray-400 leading-relaxed text-md">
-                    This is simply a portfolio to mainly present myself.
-                </p>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                
+                <!-- Personal Info Card (Liquid Glass) -->
+                <div class="liquid-glass p-8 sm:p-12 text-center md:text-left">
+                    <h3 class="text-2xl font-semibold mb-4 text-green-400">About My Vibe</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                        This page is simply a hub for my online presence. I don't build projects. I just like having a cool profile.
+                    </p>
+                    <p class="text-gray-400 leading-relaxed text-md">
+                        I like keeping things minimal, clean, and always in dark mode.
+                    </p>
+                </div>
+
+                <!-- Stats Card (Liquid Glass) -->
+                <div class="liquid-glass p-8 sm:p-12 text-center md:text-left">
+                    <h3 class="text-2xl font-semibold mb-6 text-green-400">Personal Stats</h3>
+                    <ul class="space-y-3 text-left text-lg text-gray-300">
+                        <li class="flex justify-between border-b border-gray-700 pb-1">
+                            <span class="font-light">Height:</span> <span class="font-medium">170 cm</span>
+                        </li>
+                        <li class="flex justify-between border-b border-gray-700 pb-1">
+                            <span class="font-light">Weight:</span> <span class="font-medium">51 kg</span>
+                        </li>
+                        <li class="flex justify-between border-b border-gray-700 pb-1">
+                            <span class="font-light">Hair:</span> <span class="font-medium">Brown</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-light">Eyes:</span> <span class="font-medium text-yellow-300">Blue and yellow <span class="text-gray-400 text-sm">(I know, it's weird)</span></span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <div class="section-separator"></div>
 
+        <!-- === MUSIC SECTION === -->
         <section id="music" class="mb-16">
             <h2 class="text-4xl sm:text-5xl font-bold text-center mb-10 text-gray-200">
-                <span class="text-green-400">//</span> Favorite Musicians
+                <span class="text-green-400">//</span> Favorite Music
             </h2>
-            <div class="max-w-md mx-auto liquid-glass p-6 sm:p-8">
-                <ul class="space-y-3 text-left text-lg text-gray-300">
-                    <li class="flex items-center space-x-3 transition duration-300 hover:text-green-300">
-                        <span class="text-green-400 font-mono">01.</span> <span>Tyler, the Creator</span>
-                    </li>
-                    <li class="flex items-center space-x-3 transition duration-300 hover:text-green-300">
-                        <span class="text-green-400 font-mono">02.</span> <span>Kanye West</span>
-                    </li>
-                    <li class="flex items-center space-x-3 transition duration-300 hover:text-green-300">
-                        <span class="text-green-400 font-mono">03.</span> <span>AZALI</span>
-                    </li>
-                    <li class="flex items-center space-x-3 transition duration-300 hover:text-green-300">
-                        <span class="text-green-400 font-mono">04.</span> <span>Toby Fox</span>
-                    </li>
-                    <li class="flex items-center space-x-3 transition duration-300 hover:text-green-300">
-                        <span class="text-green-400 font-mono">05.</span> <span>Frizk</span>
-                    </li>
-                </ul>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                
+                <!-- Favorite Musicians -->
+                <div>
+                    <h3 class="text-3xl font-bold mb-6 text-gray-200 text-center md:text-left">
+                        <span class="text-green-400">//</span> Musicians
+                    </h3>
+                    <div class="liquid-glass p-6 sm:p-8 h-full">
+                        <ul class="space-y-3 text-left text-lg text-gray-300">
+                            <li class="flex items-center space-x-3 transition duration-300 hover:text-green-300">
+                                <span class="text-green-400 font-mono">01.</span> <span>Tyler, the Creator</span>
+                            </li>
+                            <li class="flex items-center space-x-3 transition duration-300 hover:text-green-300">
+                                <span class="text-green-400 font-mono">02.</span> <span>Kanye West</span>
+                            </li>
+                            <li class="flex items-center space-x-3 transition duration-300 hover:text-green-300">
+                                <span class="text-green-400 font-mono">03.</span> <span>AZALI</span>
+                            </li>
+                            <li class="flex items-center space-x-3 transition duration-300 hover:text-green-300">
+                                <span class="text-green-400 font-mono">04.</span> <span>Toby Fox</span>
+                            </li>
+                            <li class="flex items-center space-x-3 transition duration-300 hover:text-green-300">
+                                <span class="text-green-400 font-mono">05.</span> <span>Frizk</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Favorite Songs -->
+                <div>
+                    <h3 class="text-3xl font-bold mb-6 text-gray-200 text-center md:text-left">
+                        <span class="text-green-400">//</span> Favorite Songs
+                    </h3>
+                    <div class="liquid-glass p-6 sm:p-8 h-full">
+                        <ul class="space-y-3 text-left text-lg text-gray-300">
+                            <li class="transition duration-300 hover:text-green-300">
+                                <span class="text-green-400 font-mono">01.</span> Mother — Tyler the Creator
+                            </li>
+                            <li class="transition duration-300 hover:text-green-300">
+                                <span class="text-green-400 font-mono">02.</span> Magic Wand — Tyler the Creator
+                            </li>
+                            <li class="transition duration-300 hover:text-green-300">
+                                <span class="text-green-400 font-mono">03.</span> Fried — Kanye West
+                            </li>
+                            <li class="transition duration-300 hover:text-green-300">
+                                <span class="text-green-400 font-mono">04.</span> Like him — Tyler the Creator
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </section>
         
     </main>
 
+    <!-- Footer -->
     <footer class="mt-16 py-6 border-t border-gray-800">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center text-gray-600 text-sm">
-            <p>VoidVexel // Portofolio</p>
+            <p>VoidVexel // Digital Aesthetic Hub</p>
         </div>
     </footer>
 
